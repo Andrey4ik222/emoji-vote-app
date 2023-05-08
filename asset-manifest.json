@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/emoji-vote-app/static/css/main.7cd94a91.css",
-    "main.js": "/emoji-vote-app/static/js/main.7ab5604e.js",
+    "main.js": "/emoji-vote-app/static/js/main.c09736fc.js",
     "static/js/787.04694fec.chunk.js": "/emoji-vote-app/static/js/787.04694fec.chunk.js",
     "index.html": "/emoji-vote-app/index.html",
     "main.7cd94a91.css.map": "/emoji-vote-app/static/css/main.7cd94a91.css.map",
-    "main.7ab5604e.js.map": "/emoji-vote-app/static/js/main.7ab5604e.js.map",
+    "main.c09736fc.js.map": "/emoji-vote-app/static/js/main.c09736fc.js.map",
     "787.04694fec.chunk.js.map": "/emoji-vote-app/static/js/787.04694fec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7cd94a91.css",
-    "static/js/main.7ab5604e.js"
+    "static/js/main.c09736fc.js"
   ]
 }
