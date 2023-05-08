@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+
+import Counter from "./components/Counter/Counter";
+import Result from "./components/Result/Result";
 
 function App() {
+  const [count, setCount] = useState([0, 0, 0]);
+
+  const handleEmojiClick = (index) => {
+    const newCount = [...count];
+    newCount[index]++;
+    setCount(newCount);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter counters={count} handleEmojiClick={handleEmojiClick} />
+      <Result counters={count} />
     </div>
   );
 }

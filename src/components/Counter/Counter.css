@@ -1,0 +1,13 @@
+.vote-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.vote-wrapper__item {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
