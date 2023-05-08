@@ -1,6 +1,11 @@
 import "./Counter.css";
 
-function Counter({ counters, handleEmojiClick }) {
+function Counter({ counters, handleEmojiClick, setShowResult }) {
+  const handleClick = (index) => {
+    handleEmojiClick(index);
+    setShowResult(false);
+  };
+
   return (
     <div className="vote">
       <div className="vote-wrapper">
@@ -8,9 +13,9 @@ function Counter({ counters, handleEmojiClick }) {
           <div className="vote-wrapper__item" key={index}>
             <img
               className="vote-wrapper__emoji"
-              src={`./img/${index + 1}.png`}
+              src={require(`../../../public/img/${index + 1}.png`)}
               alt="emoji"
-              onClick={() => handleEmojiClick(index)}
+              onClick={() => handleClick(index)}
             />
             <div className="vote-wrapper__counter">{elem}</div>
           </div>

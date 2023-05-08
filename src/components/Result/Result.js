@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import "./Result.css";
 
-function Result({ counters }) {
-  const [showResult, setShowResult] = useState(false);
-
+function Result({ counters, showResult, setShowResult }) {
   const getMaxIndex = () => {
     let maxIndex = 0;
 
@@ -31,7 +28,7 @@ function Result({ counters }) {
           <h2 className="result-item__title">Winner emoji:</h2>
           <img
             className="result-item__image"
-            src={`./img/${maxIndex + 1}.png`}
+            src={require(`../../../public/img/${maxIndex + 1}.png`)}
             alt="emoji"
           ></img>
         </div>
